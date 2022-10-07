@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		</style>
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.js"></script>
+		<script>
+			$(function(){
+				$("input").mousedown(function(){
+					var i = $(this).val();
+					// alert($("input[value]").attr());
+					$("input").focus(function(){
+						$(this).val("");
+						
+					});
+					$("input").blur(function(){
+						$(this).val(i);
+					});
+				});
+			})
+		</script>
+	</head>
+	<body>
+		<input type="text" value="dddd">
+		<input type="text" value="ddd">
+		<input type="text" value="ddddsdd">
+		<input type="text" value="dsdfsdfdd">
+		<!-- <input id="input01" type="text" placeholder="djsifoajf"/> -->
+	</body>
+</html>

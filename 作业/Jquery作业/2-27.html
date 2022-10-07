@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.js"></script>
+		<script>
+			$(function(){
+				$("form input").css({"border-color":"red","outline":"none","background-color":"blue"});	
+			})
+
+		</script>
+	</head>
+	<body>
+		<form action="#">
+			<fieldset>
+				<label for="input01">包含的子文本框<input type="text" id="input01"></label>
+				<fieldset>
+					<label for="input02"><input type="text" id="input02">包含的孙文本框</label>
+				</fieldset>
+			</fieldset>
+		</form>
+		<label for="input03">非包含的文本框<input type="text" id="input03"></label>
+	</body>
+</html>

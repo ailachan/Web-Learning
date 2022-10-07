@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.js"></script>
+		<script>
+			$(function(){
+				$("tbody tr:first").css("color","red");
+				$("tbody tr:first").css("font-size","20px");
+				$("tbody tr:last").css("color","blue");
+				$("tbody tr:even").css("background-color","#ffd");
+				$("tbody tr:odd").css("background-color","#ddf");
+				$("tbody tr:gt(3)").css("font-size","12px");
+				$("tbody tr:not(tr:gt(3))").css("font-size","14px");
+				$("h1").css("font-size","30px");
+			});
+		</script>
+	</head>
+	<body>
+		<h1>成绩单</h1>
+		<table>
+			<tbody style="text-align: center;">
+				<tr>
+					<td>学号</td>
+					<td>姓名</td>
+					<td>语文</td>
+					<td>英语</td>
+				</tr>
+				<tr>
+					<td>201203</td>
+					<td>张的</td>
+					<td>21</td>
+					<td>40</td>
+				</tr>
+				<tr>
+					<td>202203</td>
+					<td>张三</td>
+					<td>21</td>
+					<td>90</td>
+				</tr>
+				<tr>
+					<td>250203</td>
+					<td>张等</td>
+					<td>23</td>
+					<td>90</td>
+				</tr>
+				<tr>
+					<td>200403</td>
+					<td>张说</td>
+					<td>61</td>
+					<td>60</td>
+				</tr>
+				<tr>
+					<td>201203</td>
+					<td>张的</td>
+					<td>21</td>
+					<td>40</td>
+				</tr>
+				<tr>
+					<td>202203</td>
+					<td>张三</td>
+					<td>21</td>
+					<td>90</td>
+				</tr>
+				<tr>
+					<td>250203</td>
+					<td>张等</td>
+					<td>23</td>
+					<td>90</td>
+				</tr>
+				<tr>
+					<td>200403</td>
+					<td>张说</td>
+					<td>61</td>
+					<td>60</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>

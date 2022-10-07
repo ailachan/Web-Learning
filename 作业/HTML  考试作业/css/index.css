@@ -1,0 +1,422 @@
+body
+{
+	padding: 0px;
+	margin: 0px;
+}
+#container
+{
+	/* border: 1px solid; */
+	width: 1080px;
+	height: 2260px;
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	background-color: #FAFAFA;
+}
+.topbar
+{
+	margin-top: 70px;
+	/* border: 1px solid; */
+	width: 1080px;
+	height: 200px;
+	background-color: #FAFAFA;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	z-index: 1;
+}
+.input01::placeholder
+{
+	color: black;
+	padding-left: 100px;
+}
+.input01
+{   
+	background-color: #eee;
+	background-image: url("../img/2022-09-16_113940.png");
+	background-repeat: no-repeat;
+	background-size: 8%;
+	background-position: 21px 20px;
+	outline: none;
+	border: none;
+	border-radius: 80px;
+	width: 75%;
+	height: 50%;
+	font-size: 50px;
+}
+.inputtxt
+{
+	font-size: 50px;
+	width: 10%;
+	/* border: 1px solid; */
+	font-weight: bold;
+}
+.inputimg
+{
+	width: 8%;
+}
+.mid01
+{
+	border: 1px solid;
+	border-radius: 30px;
+	background-color: #FE455B;
+	width: 1040px;
+	height: 200px;
+	color: white;
+	font-size: 50px;
+}
+.mid01 .item01
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: left;
+	align-items: center;
+	margin-left: 30px;
+	height: 50%;
+	font-size: 40px;
+}
+.mid01 .item01 div img
+{
+	width: 50px;
+	height: 50px;
+	position: relative;/* 相对于原来的位置偏移 */
+	top:10px;
+	left: 10px;
+}
+.mid01 .item01>div
+{
+	width: 50%;
+}
+.mid01 .item02
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: left;
+	align-items: center;
+	margin-left: 30px;
+	height: 50%;
+}
+.mid01 .item02>div
+{
+	width: 50%;
+}
+.mid02
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	width: 100%;
+	height: 200px;
+	font-size: 50px;
+	margin-top: 50px;
+}
+.mid02 img
+{
+	width: 100px;
+	height: 100px;
+}
+.mid03
+{
+	border: 1px solid #eaeaea;
+	border-radius: 20px;
+	background-color: white;
+	width: 1040px;
+	height: 400px;
+	font-size: 50px;
+}
+.mid03 .abov
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	border-bottom: 1px solid;
+	height: 35%;
+}
+.mid03 .abov div:not(:nth-child(1),:nth-child(4))
+{
+	color: red;
+	font-size: 35px;
+	margin-bottom: -5px;
+}
+.mid03 .belo
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	height: 65%;
+}
+.mid03 .belo>div
+{
+	display: flex;
+	flex-flow: column wrap;
+	align-items: center;
+	width: 33%;
+}
+.mid03 .belo div div:nth-child(1)
+{
+	font-size: 40px;
+}
+.mid03 .belo div div:nth-child(2)
+{
+	color: #69BEAF;
+	margin: 20px auto;
+}
+.mid03 .belo div div:nth-child(3)
+{
+	color: #69BEAF;
+	font-size: 30px;
+}
+.mid04
+{
+	margin-top: 50px;
+	width: 1000px;
+	height: 400px;
+	font-size: 50px;
+	/* border: 1px solid; */
+}
+.mid04 .abov
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+	font-weight: bold;
+}
+.mid04 .abov div:last-child
+{
+	font-weight: lighter;
+	color: #ccd;
+	font-size: 80%;
+}
+.mid04 .belo
+{
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+}
+.mid04 .belo>div
+{
+	height: 250px;
+	background-color: #FDF2F2;
+	margin-top: 50px;
+}
+.mid04 .belo .belo01
+{
+	width: 32%;
+	border-right: 3px dotted;
+	border-radius: 0 30px 30px 0;
+	border-color: rgba(0,0,0,0.1);
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+}
+.mid04 .belo .belo02
+{
+		border-radius: 30px 0 0 30px;
+		height: 250px;
+		width: 15%;
+		font-size: 120%;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		margin-right: 50px;
+		line-height: 100px;
+}
+.mid04 .belo .belo03
+{
+	width: 32%;
+	border-right: 3px dotted;
+	border-radius: 0 30px 30px 0;
+	border-color: rgba(0,0,0,0.1);
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: space-between;
+}
+.mid04 .belo .belo04
+{
+		border-radius: 30px 0 0 30px;
+		height: 250px;
+		width: 15%;
+		font-size: 120%;
+		text-align: center;
+		display: flex;
+		align-items: center;
+		line-height: 100px;
+}
+
+.mid04 .belo .belo01 div:first-child
+{
+	font-size: 80%;
+	background-color: #FE455B;
+	width: 75%;
+	border-radius: 20px 0 20px 0;
+	color: white;
+}
+.mid04 .belo .belo01 img
+{
+	width: 50px;
+	height: 50px;
+	border-radius: 20px 0 20px 0;
+}
+
+.mid04 .belo .belo03 div:first-child
+{
+	font-size: 80%;
+	background-color: #FE455B;
+	width: 75%;
+	border-radius: 20px 0 20px 0;
+	color: white;
+}
+.mid04 .belo .belo03 img
+{
+	width: 50px;
+	height: 50px;
+	border-radius: 20px 0 20px 0;
+}
+.mid04 .belo .belo01 div:nth-child(2)
+{
+	font-size: 90%;
+	font-weight: bold;
+}
+.mid04 .belo .belo01 div:nth-child(2) span
+{
+	color: red;
+	font-size: 150%;
+	font-weight: normal;
+}
+.mid04 .belo .belo01 div:nth-child(3)
+{
+	color: #DEA590;
+	font-size: 80%;
+}
+.mid04 .belo .belo02
+{
+	color: #E06F4E;
+	font-weight: bold;
+}
+
+.mid04 .belo .belo03 div:nth-child(2)
+{
+	font-size: 90%;
+	font-weight: bold;
+	color: red;
+}
+.mid04 .belo .belo03 div:nth-child(2) span
+{
+	color: red;
+	font-size: 150%;
+	font-weight: normal;
+}
+.mid04 .belo .belo03 div:nth-child(3)
+{
+	color: #DEA590;
+	font-size: 80%;
+}
+.mid04 .belo .belo04
+{
+	color: #E06F4E;
+	font-weight: bold;
+}
+
+
+.mid05
+{
+	margin-top: 30px;
+	width: 1005px;
+	height: 620px;
+	font-size: 50px;
+	/* border: 1px solid; */
+	overflow: hidden;
+	/* 超出手机页面的部分隐藏 */
+}
+.mid05 .abov
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	align-items: flex-end;
+	font-weight: bold;
+}
+.mid05 .abov div:last-child
+{
+	font-weight: lighter;
+	color: #ccd;
+	font-size: 80%;
+}
+.mid05 .belo
+{
+	margin-top: 30px;
+	border: 1px solid #eaeaea;
+	border-radius: 20px;
+	background-color: white;
+	width: 1000px;
+	height: 500px;
+	padding-top: 30px;
+	overflow: hidden;/* 超出手机页面或父元素的部分隐藏 */
+}
+.mid05 .belo .belo01
+{
+	width: 80%;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: flex-end;
+}
+.mid05 .belo .belo01 div:last-child
+{
+	background-color: orangered;
+	color: white;
+	border-radius: 10px;
+	padding: 10px;
+}
+.mid05 .belo .belo02
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: flex-end;
+	margin: 20px 20px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid;
+}
+.mid05 .belo .belo02 div:first-child div:first-child
+{
+	color: red;
+	font-size: 130%;
+}
+.mid05 .belo .belo02 div div:last-child
+{
+	font-size: 30px;
+	font-weight: lighter;
+	color: #ccc;
+	margin-top: 20px;
+}
+.btm
+{
+	position: fixed;
+	z-index: 1;
+	bottom: 0px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	width: 1080px;
+	height: 150px;
+	background-color: white;
+	font-size: 30px;
+}
+.zt
+{
+	position: fixed;
+	top: 0px;
+	width: 1080px;
+	z-index: 1;
+}
+.zt img
+{
+	height: 70px;
+	width: 100%;
+}

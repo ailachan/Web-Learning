@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function GetType( obj ) // 函数处于项级作用域，用于求操作数类型
+			 {
+			 return typeof( obj ); // 返回对象的类型
+			 }
+			 function fruit( name, price) // 水果类构造函数
+			 {
+			 if( GetType( price ) != "number" ) // 调用顶级作用域中的函数GetType
+			 {
+			 var e = new Error(); // 定义错误信息对象
+			 e.message = "Price if not a number"; // 填写错误描述
+			 throw e; // 抛出错误对象
+			 }
+			 }
+			 var apple = new fruit( "apple", "apple" ); 
+			 // alert(apple);s
+		</script>
+		
+		<link rel="stylesheet" href="css/sj.css">
+	</head>
+	<body>
+		<div id="container">
+			
+			<div class="banner">个人中心</div>
+			
+			<div class="bj">
+				<div class="radius_bj"></div>
+			</div>
+			
+			<div class="midbar">
+				<img class="headerphoto" src="img/2022-08-31_204346.png" alt="图片">
+				<div class="userinfo">1
+					<div style="font-size: 35px;">stysakjflksajflkasj</div>
+				</div>
+				<div class="txtborder">
+					<div>今日限行</div>
+					<div>1<span style="color: white;">&nbsp;&nbsp;|&nbsp;&nbsp;</span>6</div>
+				</div>
+			</div>
+			
+			<div class="btmbar">
+				<div>
+					<div>324325432</div>
+					<div>钱包</div>
+				</div>
+				<div>
+					<div>0</div>
+					<div>购物车</div>
+				</div>
+				<div>
+					<div>114514</div>
+					<div>我的积分</div>
+				</div>				
+				<div>
+					<div>1</div>
+					<div>预约服务</div>
+				</div>
+			</div>
+			
+			<div class="main">
+				
+				<div class="vip">
+					<img src="img/2022-09-09_124203.png" alt="图片" width="50px" height="50px" class="vipimg">
+					<div class="viptxt"><span style="font-weight: bold;">开通VIP·</span><span style="font-size: 30px">每月免费洗车</span></div>
+					<div style="font-size: 30px">豪华特权</div>
+				</div>
+				
+				<div class="mainmid">
+					<div class="mainmidcon">
+						<div>我的爱车</div>
+						<div>管理&gt;</div>
+					</div>
+					<div class="mainmidcon">
+						<div>
+							<img src="img/2022-09-09_131931.png" alt="图片">
+							<div>美容清洁</div>
+						</div>
+						<div>
+							<img src="img/2022-09-09_131931.png" alt="图片">
+							<div>美容清洁</div>
+						</div>
+						<div>
+							<img src="img/2022-09-09_131931.png" alt="图片">
+							<div>美容清洁</div>
+						</div>
+						<div>
+							<img src="img/2022-09-09_131931.png" alt="图片">
+							<div>美容清洁</div>
+						</div>
+					</div>
+					<div class="mainmidcon">
+						<div>我的订单</div>
+						<div>全部订单&gt;</div>
+					</div>
+					
+					<div class="mainmidcon">
+						<div>
+							<img src="img/2022-09-09_132043.png" alt="图片">
+							<div>待付款</div>
+						</div>
+						
+						<div>
+							<img src="img/2022-09-09_132043.png" alt="图片">
+							<div>待付款</div>
+						</div>
+						
+						<div>
+							<img src="img/2022-09-09_132043.png" alt="图片">
+							<div>待付款</div>
+						</div>
+						
+						<div>
+							<img src="img/2022-09-09_132043.png" alt="图片">
+							<div>待付款</div>
+						</div>
+						
+						
+					</div>
+					
+					<div class="mainmidcon">
+						<div>车主服务</div>
+					</div>
+					
+					
+					<div class="mainmidcon">
+						<div>
+							<img src="img/2022-09-09_132105.png" alt="图片">
+							<div>违章查询</div>
+						</div>
+						
+						<div>
+							<img src="img/2022-09-09_132105.png" alt="图片">
+							<div>违章查询</div>
+						</div>
+						
+						<div>
+							<img src="img/2022-09-09_132105.png" alt="图片">
+							<div>违章查询</div>
+						</div>
+						
+						<div>
+							<img src="img/2022-09-09_132105.png" alt="图片">
+							<div>违章查询</div>
+						</div>
+						
+						<div>
+							<img src="img/2022-09-09_132105.png" alt="图片">
+							<div>违章查询</div>
+						</div>
+						
+						<div>
+							<img src="img/2022-09-09_132105.png" alt="图片">
+							<div>违章查询</div>
+						</div>
+						
+						<div>
+							<img src="img/2022-09-09_132105.png" alt="图片">
+							<div>违章查询</div>
+						</div>
+						
+						<div>
+							<img src="img/2022-09-09_132105.png" alt="图片">
+							<div>违章查询</div>
+						</div>
+						
+					</div>
+					
+				</div>
+				
+			</div>
+			
+			<div class="bottom">
+				<div>
+					<img src="img/2022-09-09_170355.png" alt="图片">
+					<div>首页</div>
+				</div>
+				<div>
+					<img src="img/2022-09-09_170419.png" alt="图片">
+					<div>分类</div>
+				</div>
+				<img src="img/2022-09-09_170443.png" alt="图片">
+				<div>
+					<img src="img/2022-09-09_170456.png" alt="图片">
+					<div>门店</div>
+				</div>
+				<div>
+					<img src="img/2022-09-09_170518.png" alt="图片">
+					<div>我的</div>
+				</div>
+				
+			</div>
+			
+		</div>
+	</body>
+</html>

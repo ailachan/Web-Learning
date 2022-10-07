@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			ul
+			{
+				list-style: none;
+				padding: 0px;
+				margin: 0px;
+			}
+			.divnum
+			{
+				
+				padding: 0px 10px; /* 设置数字边距 */
+				/* border: 1px solid; */
+			}
+			li
+			{
+				border: 1px dotted #ccc;
+				width: 270px;
+				height: 45px;
+				line-height: 45px;
+				overflow: hidden;/* 防止元素从父级框中出去 */
+			}
+			li div /* 将所有div元素靠左浮动，父级宽度不够挤不下的元素会换行*/
+			{
+				float: left;
+			}
+			li img,li .txtdiv02,li .txtdiv03/* 隐藏所有图片文本 */
+			{
+				display: none;
+			}
+			li:hover
+			{
+				height: 160px;
+			}
+			li:hover img
+			{
+				display: block;
+			}
+			li:hover .txtdiv
+			{
+				margin-left: 20px;
+				/* border: 1px solid; */
+				margin-top: 20px;
+			}
+			li:hover .txtdiv02
+			{
+				display: block;
+				margin-left: 20px;
+				/* border: 1px solid; */
+				color: red;
+				font-weight: bolder;
+				line-height: 20px;
+			}
+			li:hover .txtdiv03
+			{
+				display: block;
+				margin-left: 20px;
+				/* border: 1px solid; */
+				color: #ccc;
+				font-size: 12px;
+				font-weight: bolder;
+				text-decoration: line-through;
+				line-height: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>
+				<div class="divnum" style="color: red;">1</div>
+				<div>
+					<img src="img/2022-09-07_113206.png" alt="图片"/>
+				</div>
+				<div class="txtdiv">
+					萤火虫小巷
+				</div>
+				<div class="txtdiv02">
+					&yen;23.12
+				</div>
+				<div class="txtdiv03">
+					&yen;233.12
+				</div>
+			</li>
+			<li>
+				<div class="divnum" style="color: red;">2</div>
+				<div>
+					<img src="img/2022-09-07_113206.png" alt="图片"/>
+				</div>
+				<div class="txtdiv">
+					萤火虫小巷
+				</div>
+				<div class="txtdiv02">
+					&yen;23.12
+				</div>
+				<div class="txtdiv03">
+					&yen;233.12
+				</div>
+			</li>
+			<li>
+				<div class="divnum" style="color: red;">3</div>
+				<div>
+					<img src="img/2022-09-07_113206.png" alt="图片"/>
+				</div>
+				<div class="txtdiv">
+					萤火虫小巷
+				</div>
+				<div class="txtdiv02">
+					&yen;23.12
+				</div>
+				<div class="txtdiv03">
+					&yen;233.12
+				</div>
+			</li>
+			<li>
+				<div class="divnum">4</div>
+				<div>
+					<img src="img/2022-09-07_113206.png" alt="图片"/>
+				</div>
+				<div class="txtdiv">
+					萤火虫小巷
+				</div>
+				<div class="txtdiv02">
+					&yen;23.12
+				</div>
+				<div class="txtdiv03">
+					&yen;233.12
+				</div>
+			</li>
+			<li>
+				<div class="divnum">5</div>
+				<div>
+					<img src="img/2022-09-07_113206.png" alt="图片"/>
+				</div>
+				<div class="txtdiv">
+					萤火虫小巷
+				</div>
+				<div class="txtdiv02">
+					&yen;23.12
+				</div>
+				<div class="txtdiv03">
+					&yen;233.12
+				</div>
+			</li>
+			<li>
+				<div class="divnum">6</div>
+				<div>
+					<img src="img/2022-09-07_113206.png" alt="图片"/>
+				</div>
+				<div class="txtdiv">
+					萤火虫小巷
+				</div>
+				<div class="txtdiv02">
+					&yen;23.12
+				</div>
+				<div class="txtdiv03">
+					&yen;233.12
+				</div>
+			</li>
+			<li>
+				<div class="divnum">7</div>
+				<div>
+					<img src="img/2022-09-07_113206.png" alt="图片"/>
+				</div>
+				<div class="txtdiv">
+					萤火虫小巷
+				</div>
+				<div class="txtdiv02">
+					&yen;23.12
+				</div>
+				<div class="txtdiv03">
+					&yen;233.12
+				</div>
+			</li>
+			<li>
+				<div class="divnum">8</div>
+				<div>
+					<img src="img/2022-09-07_113206.png" alt="图片"/>
+				</div>
+				<div class="txtdiv">
+					萤火虫小巷
+				</div>
+				<div class="txtdiv02">
+					&yen;23.12
+				</div>
+				<div class="txtdiv03">
+					&yen;233.12
+				</div>
+			</li>			<li>
+				<div class="divnum">9</div>
+				<div>
+					<img src="img/2022-09-07_113206.png" alt="图片"/>
+				</div>
+				<div class="txtdiv">
+					萤火虫小巷
+				</div>
+				<div class="txtdiv02">
+					&yen;23.12
+				</div>
+				<div class="txtdiv03">
+					&yen;233.12
+				</div>
+			</li>			<li>
+				<div class="divnum">10</div>
+				<div>
+					<img src="img/2022-09-07_113206.png" alt="图片"/>
+				</div>
+				<div class="txtdiv">
+					萤火虫小巷
+				</div>
+				<div class="txtdiv02">
+					&yen;23.12
+				</div>
+				<div class="txtdiv03">
+					&yen;233.12
+				</div>
+			</li>
+		</ul>
+	</body>
+</html>

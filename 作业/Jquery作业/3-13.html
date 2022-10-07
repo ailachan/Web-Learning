@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.js"></script>
+		<script>
+			$(function(){
+				$("#div01").click(function(){
+					$(this).next().toggle();
+				});
+				$("ul li").mouseover(function(){
+					$(this).css("background-color","red");
+					$("ul:hidden").show();
+				});
+				$("ul li").mouseout(function(){
+					$(this).css("background-color","white");
+					$("ul:visible").hide();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<div id="div01">购物特权</div>
+		<ul>
+			<li>全额兑换</li>
+			<li>俱乐部包邮卡</li>
+			<li>购物领金币</li>
+			<li>每日领金币</li>
+			<li>VIP阶梯价</li>
+		</ul>
+	</body>
+</html>

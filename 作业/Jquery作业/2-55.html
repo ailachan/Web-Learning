@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.js"></script>
+		<style>
+			form
+			{
+				display: flex;
+				flex-flow: column wrap;
+				justify-content: left;
+			}
+			form *
+			{
+				width: 50%;
+			}
+			form input:nth-child(2),:nth-child(3)
+			{
+				height: 30px;
+				margin-top: 10px;
+			}
+			form input:nth-child(4),:nth-child(5)
+			{
+				width: 5%;
+			}
+			form button
+			{
+				height: 40px;
+				width: 25%;
+				margin: 10px 0px;
+			}
+			form div
+			{
+				/* border: 2px solid; */
+				width: 25%;
+				height: 40px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+			input:last-child
+			{
+				height: 50px;
+				width: 200px;
+				line-height: 50px;
+				padding-left: 30px;
+			}
+		</style>
+		<script>
+			$(function(){
+				$("input[type=text]").css({"background-color":"yellow","border":"2px solid blue"});
+				$("input[type=radio],[type=checkbox]").attr("checked","true");
+				$("button[type=submit]").css({"background-color":"pink","border":"2px solid blue"})
+				$("button[type=reset]").css({"background-color":"#ccc","border":"2px solid blue"})
+				$("button").last().css({"background-color":"red","border":"2px solid blue"})
+				$("input[type=file]").css({"background-color":"orange","border":"2px solid blue"});
+				
+			});
+		</script>
+	</head>
+	<body>
+		<form action="2-51.html">
+			<h1>表单选择器</h1>
+			<input type="text">
+			<input type="text">
+			<input type="radio">
+			<input type="checkbox">
+			<button type="submit" >submit</button>
+			<div>image</div>
+			<button type="reset">reset</button>
+			<button>Button</button>
+			<input type="file"/>
+		</form>
+
+	</body>
+</html>

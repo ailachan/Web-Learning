@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			ul
+			{
+				padding: 0;
+				margin: 0;
+				list-style: none;
+			}
+			li
+			{
+				display: flex;
+				justify-content: left;
+				flex-flow: row wrap;
+				align-items: center;
+				border: 1px dotted;
+				width: 300px;
+				height: 50px;
+			}
+			.divnum
+			{
+				color: red;
+				padding: 10px;
+			}
+			.divimg
+			{
+				display: none;
+				width: 100px;
+				height: 120px;
+			}
+			.txtdiv02
+			{
+				display: none;
+			}
+			.txtdiv03
+			{
+				display: none;
+			}
+			li:hover div:nth-child(2),li:hover div:nth-child(3)
+			/* 如果有多个div，nth-child()会自动从有孩子的作为父级div里找第n个孩子 */
+			{
+				display: block;
+				order: 1;
+			}
+			
+			li:hover .divimg/* 调整平行顺序为后面几个div的前面 */
+			{
+				display: block;
+				order: 0;
+			}
+			li:hover
+			{
+				height: 150px;
+			}
+			li:hover .txtdiv
+			{
+				margin-left: 30px;
+				line-height: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li>
+				<div class="divnum">1</div>
+				<div class="txtdiv">
+					<div>萤火虫之墓</div>
+					<div class="txtdiv02">
+						&yen;23.12
+					</div>
+					<div class="txtdiv03">
+						&yen;233.12
+					</div>
+				</div>
+
+				<img class="divimg" src="img/2022-08-31_204346.png">
+			</li>
+			
+			<li>
+				<div class="divnum">1</div>
+				<div class="txtdiv">
+					<div>萤火虫之墓</div>
+					<div class="txtdiv02">
+						&yen;23.12
+					</div>
+					<div class="txtdiv03">
+						&yen;233.12
+					</div>
+				</div>
+			
+				<img class="divimg" src="img/2022-08-31_204346.png">
+			</li>
+		</ul>
+		
+	</body>
+</html>

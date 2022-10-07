@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body
+			{
+				position: relative;
+				background: url(img/86261533_p0.jpg) no-repeat -900px -100px;
+				background-position: 30% 70%; 
+			}
+			.div01
+			{
+				
+				background-color: aliceblue;
+				opacity: 0.4;
+				width: 600px;
+				height: 400px;
+				position: absolute;
+				left: 50px;
+				top: 100px;
+			}
+			.form
+			{
+				
+				background-color: azure;
+				position: absolute;
+				width: 230px;/* 指定宽高和只设置padding的时候差不多的大小以免收缩时宽高变小 */
+				height: 150px;
+				top: 180px;
+				left: 200px;
+				line-height: 300%;
+				padding:40px;
+			}
+		</style>
+	</head>
+	<body>
+			<div class="div01"></div>
+				<form class="form" action="44.html" name="form02" method="GET">
+					<label for="user">账号：</label>
+					<input type="text" name="uname" id="user">
+					<br>
+					<label for="pwd">密码：</label>
+					<input type="text" name="password" id="pwd">
+					<br>
+					<input type="submit" name="login" id="lgn" value="登录">
+				</form>
+	</body>
+</html>

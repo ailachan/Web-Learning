@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			ul
+			{
+				padding: 0px;
+				margin: 0px;
+				list-style: none;
+			}
+			li>div:first-child
+			{
+				/* border: 1px solid; */
+				height: 50px;
+				display: flex;
+				align-items: center;
+			}
+		</style>
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.js"></script>
+		<script>
+			$(function(){
+				$("ul li div:nth-child(2)").hide();
+				var flag = 0;
+				$("ul li div:first-child").on({
+					mouseover:function(){
+						$(this).css({"background-color":"aquamarine","border-radius":"10px 10px 0px 0px","text-decoration":"underline"});
+					},
+					mouseout:function(){
+						
+						$(this).css({"background-color":"white","border-radius":"10px 10px 0px 0px","text-decoration":"none"});
+					},
+					
+					click:function(){
+						if(flag==0)
+						{
+							$(this).next().show();
+							flag = 1;
+							$(this).children("img").attr("src","img/2.jpg");//添加属性
+						}
+						else
+						{
+							$(this).next().hide();
+							flag = 0;
+							$(this).children("img").attr("src","img/1.jpg");
+						}
+						
+					}
+				})
+			});
+		</script>
+	</head>
+	<body>
+		<ul>
+			<li>
+				<div><img style="margin:auto 10px;" src="img/1.jpg" alt="图片" width="10px" height="10px">什么是人身保险</div>
+				<div>静安寺滴哦飞机阿松i的房间阿松i的风景 技术都i范吉奥i附件按时间佛i啊就是佛i静安寺佛i骄傲</div>
+			</li>
+			<li>
+				<div><img style="margin:auto 10px;" src="img/1.jpg" alt="图片" width="10px" height="10px">什么是人身保险</div>
+				<div>静安寺滴哦飞机阿松i的房间阿松i的风景 技术都i范吉奥i附件按时间佛i啊就是佛i静安寺佛i骄傲</div>
+			</li>
+		</ul>
+	</body>
+</html>

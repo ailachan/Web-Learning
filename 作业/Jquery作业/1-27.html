@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("div").css("background-color","red");
+			})
+			$(function(){
+				$("ul>li:nth-child(3)").css({"font-size":"30px","font-weight":"bolder"}).next().css("background-color","red");
+			})	
+			$(document).ready(function(){
+				
+				$("img").click(function(){
+					$(this).css("border","1px solid red");
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<div>div</div>
+		<ul>
+			<li>家庭</li>
+			<li>垫底</li>
+			<li>撒旦</li>
+			<li>奋斗</li>
+			<li>爱豆</li>
+		</ul>
+		<img src="img/1.jpg" alt="图片">
+	</body>
+</html>

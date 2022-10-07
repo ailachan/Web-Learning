@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.1/jquery.js"></script>
+		<script>
+			$(document).ready(function(){
+				$("input").click(function(){
+				
+					var _input = $("input")[0];
+					if(_input.checked)
+					{
+						alert("操作成功");
+					}
+				})
+			})
+		</script>
+	</head>
+	<body>
+		<input type="checkbox"/>接受服务条款
+	</body>
+</html>
