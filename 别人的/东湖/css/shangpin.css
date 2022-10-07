@@ -1,0 +1,32 @@
+.sp-bg{
+    background-color: #f2f2f2;
+}
+.sp{
+    width: 1226px;
+    margin: auto;
+}
+.sp-bg .sp h1{
+    padding: 22px 0;
+}
+.sp-bg .sp .sp-lb{
+    display: flex;
+}
+.sp-bg .sp-lb .sp-img{
+    margin: auto;
+    text-align: center;
+    width: 234px;
+    height: 339px;
+    background-color: #ffffff;
+}
+.sp-bg .sp-lb .sp-img img{
+    width: 100%;
+}
+.sp-bg .sp-lb .sp-img .mediumpurple{
+    color: mediumpurple;
+    font-size: 14px;
+    margin: 4px 0;
+}
+.sp-bg .sp-lb .sp-img .orange{
+    color: orange;
+    font-size: 17px;
+}

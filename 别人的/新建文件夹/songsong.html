@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link href="bootstrap-3.4.1-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<style>
+			ul,li{
+				margin: 0px 0px;
+				padding: 0px 0px;
+				list-style-type: none;
+			}
+			.pagg{
+				width: 1111px;
+				height: 1200px;
+				margin: 0px auto;
+				background-color: antiquewhite;
+			}
+			.pagg-top{
+				width: 100%;
+				height: 350px;
+				background-color: aqua;
+				background-image: url("./bizhi.png");
+			}
+			.pagg-top .pagg-top_song{
+				font-family: "楷体";
+				font-size: 62px;
+				color: crimson;
+				padding-top: 5px;
+			}
+			.pagg-top .geci{
+				font-family: "宋体";
+				font-size: 25px;
+				color: coral;
+				padding-top: 15px;
+				padding-left: 15px;
+			}
+			.pagg-low{
+				width: 100%;
+				height: 850px;
+				background-color: aquamarine;
+			}
+			.pagg-low_left{
+				width: 350px;
+				height: 100%;
+				background-color: chartreuse;
+			}
+			.pagg-low .title1{
+				font-size: 35px;
+				text-align: center;
+				padding-top: 20px;
+				font-family: "楷体";
+				color: black;
+				font-weight: bold;
+			}
+			.pagg-low .zuopin img{
+				width: 120px;
+				height: 120px;
+				padding-left: 20px;
+				padding-top: 18px;
+				float: left;
+			}
+			.pagg-low .chose{
+				position: relative;
+				background-color: #fff;
+			}
+			.pagg-low .chose ul{
+				width: 120px;
+				position: absolute;
+				top:10px;
+				background-color: #fff;	
+			}
+			.pagg-low .chose li{
+				padding: 0px 0px;
+				width: 120px;
+			}
+			.pagg-low .chose a{
+				font-size: 20px;
+				padding-left: 20px;
+				padding-top: 20px;
+				float: left;
+				color: #5f5f5f;
+			}
+			.pagg-low .zuopin .chose a:link{
+				text-decoration: none;
+			}
+			.pagg-low .zuopin .chose a:hover{
+				color: cornflowerblue;
+			}
+/* 			.pagg-low .zuopin span{
+				float: left;
+				padding-top: 55px;
+				padding-left: 20px;
+				color: #5f5f5f;
+			} */
+			.show{
+				display: block;
+			}
+			.hidden{
+				display: none;
+			}
+		</style>
+		<script>
+			function setshow(li){
+				li.className="chose";
+				subNav=li.getElementsByTagName("ul")[0];
+				subNav.className="show";
+			}
+			function sethidden(li){
+				li.className="";
+				subNav=li.getElementsByTagName("ul")[0];
+				subNav.className="hidden";
+			}
+		</script>
+	</head>
+	<body>
+		<div class="pagg">
+			
+			<div class="pagg-top">
+				<div class="pagg-top_song">音乐才子——Vae许嵩</div>
+				<div class="geci"><span>独揽月下萤火，照亮一纸寂寞（《南山忆》）</span></div>
+				<div class="geci"><span>万家灯火，看得太多，只会更寂寞（《飞蛾》）</span></div>
+				<div class="geci"><span>不恋红尘，却难舍回忆，每一段都有你（《惊鸿一面》）</span></div>
+				<div class="geci"><span>当时的我想不到今天，错过的人回不到从前（《梧桐灯》）</span></div>
+				<div class="geci"><span>三月一路烟霞莺飞草长，柳絮纷飞里看见了故乡（《庐州月》）</span></div>
+			</div>
+			
+			<div class="pagg-low">
+				<div class="pagg-low_left">
+					<div class="title1"><span>主要作品(专辑)</span></div>
+					<div class="zuopin">
+						<img src="./zidingyi.png">
+						<ul>
+							<li class="chose" onmouseover="setshow(this)" onmouseout="sethidden(this)">
+								<a href="#">
+									<span class="shoppingcat-font">自定义</span>
+									<span class="glyphicon glyphicon-menu-down"></span>
+								</a>
+								<ul class="hidden">
+									<li><a href="#">《有何不可》</a></li>
+									<li><a href="#">《多余的解释》</a></li>
+									<li><a href="#">《坏孩子》</a></li>
+									<li><a href="#">《清明雨上》</a></li>
+									<li><a href="#">《城府》</a></li>
+								</ul>
+							</li>
+						</ul>
+						<!-- <span>发行时间&nbsp;2009-01-10</span> -->
+					</div>
+<!-- 					<div class="zuopin">
+						<img src="./xunwuqishi.png">
+						<a href="#">寻雾启示</a>
+						<span>发行时间&nbsp;2010-01-06</span>
+					</div>
+					<div class="zuopin">
+						<img src="./sugela.png">
+						<a href="#">苏格拉没有底</a>
+						<span>发行时间&nbsp;2011-04-01</span>
+					</div>
+					<div class="zuopin">
+						<img src="./chicha.png">
+						<a href="#">不如吃茶去</a>
+						<span>发行时间&nbsp;2014-08-23</span>
+					</div> -->
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

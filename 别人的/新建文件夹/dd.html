@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			ul li a
+			{
+				text-decoration: none;
+				color: black;
+			}
+			.pagg
+			{
+				padding: 0px;
+				margin: 0px;
+				background-color: aquamarine;
+				height: 3000px;
+				width: 1920px;
+			}
+			.pagg-top
+			{
+				background-image: url("./bizhi.png");
+				height: 40%;
+			}
+			
+			.pagg-top .pagg-top_song{
+				font-family: "楷体";
+				font-size: 62px;
+				color: crimson;
+				padding-top: 5px;
+			}
+			.pagg-top .geci{
+				font-family: "宋体";
+				font-size: 25px;
+				color: coral;
+				padding-top: 15px;
+				padding-left: 15px;
+			}
+			.pagg-low_left
+			{
+				background-color: pink;
+				width: 15%;
+				height: 3000px;
+				overflow: hidden;
+			}
+			.pagg-low_left .title1
+			{
+				font-family: "楷体";
+				font-size: 30px;
+				color: crimson;
+				padding-top: 5px;
+			}
+			.pagg-low_left img
+			{
+				width: 100px;
+				height: 100px;
+			}
+			.pagg-low_left ul
+			{
+				display: none;
+				list-style: none;
+				margin: 0px;
+				padding: 0px;
+				background-color: white;
+				width: 250%;
+			}
+			.pagg-low_left .gedan:hover ul
+			{
+				display: block;
+			}
+			.pagg-low_left ul li
+			{
+				border: 1px dotted hotpink;
+			}
+			.pagg-low_left > .liebiao
+			{
+				display: flex;
+				flex-flow: row wrap;
+				justify-content: left;
+				margin-top: 20px;
+				margin-left: 20px;
+				margin-bottom: 80px;
+			}
+			
+			.pagg-low_left .gedan
+			{
+				border: 1px dotted hotpink;
+				background-color: white;
+				width: 50px;
+				height: 25px;
+				margin-left: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="pagg">
+			<div class="pagg-top">
+				<div class="pagg-top_song">音乐才子——Vae许嵩</div>
+				<div class="geci"><span>独揽月下萤火，照亮一纸寂寞（《南山忆》）</span></div>
+				<div class="geci"><span>万家灯火，看得太多，只会更寂寞（《飞蛾》）</span></div>
+				<div class="geci"><span>不恋红尘，却难舍回忆，每一段都有你（《惊鸿一面》）</span></div>
+				<div class="geci"><span>当时的我想不到今天，错过的人回不到从前（《梧桐灯》）</span></div>
+				<div class="geci"><span>三月一路烟霞莺飞草长，柳絮纷飞里看见了故乡（《庐州月》）</span></div>
+			</div>
+			
+			
+			<div class="pagg-low_left">
+				<div class="title1">
+					<span>主要作品(专辑)</span>
+				</div>
+				
+				<div class="liebiao">
+					<img class="pic" src="./zidingyi.png">
+					<div class="gedan">自定义
+						<ul>
+							<li><a href="#">《有何不可》</a></li>
+							<li><a href="#">《多余的解释》</a></li>
+							<li><a href="#">《坏孩子》</a></li>
+							<li><a href="#">《清明雨上》</a></li>
+							<li><a href="#">《城府》</a></li>
+						</ul>
+					</div>
+				</div>
+
+
+				<div class="liebiao">
+					<img class="pic" src="./zidingyi.png">
+					<div class="gedan">自定义
+						<ul>
+							<li><a href="#">《有何不可》</a></li>
+							<li><a href="#">《多余的解释》</a></li>
+							<li><a href="#">《坏孩子》</a></li>
+							<li><a href="#">《清明雨上》</a></li>
+							<li><a href="#">《城府》</a></li>
+						</ul>
+					</div>
+				</div>
+				
+				<div class="liebiao">
+					<img class="pic" src="./zidingyi.png">
+					<div class="gedan">自定义
+						<ul>
+							<li><a href="#">《有何不可》</a></li>
+							<li><a href="#">《多余的解释》</a></li>
+							<li><a href="#">《坏孩子》</a></li>
+							<li><a href="#">《清明雨上》</a></li>
+							<li><a href="#">《城府》</a></li>
+						</ul>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</body>
+</html>
