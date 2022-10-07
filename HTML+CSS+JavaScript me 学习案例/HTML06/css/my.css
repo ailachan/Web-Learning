@@ -1,0 +1,74 @@
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+	font-size: 18px;
+	color: aliceblue;
+	font-family: "微软雅黑";
+}
+.sub>li{/* 三级菜单跟随li定位 */
+	display: none;
+	position: relative;
+}
+.sub_chr {/* 三级菜单跟随li定位 */
+	display: none;
+	position: absolute;
+	left: 120px;
+	top: 0px;
+}
+/* 一级菜单 >表示子级 空格表示后代*/
+.menu>li{
+	float: left;
+	background-color: aqua;
+	width: 120px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border-right: 1px solid aliceblue;
+}
+
+.menu>li:hover{
+	background-color: aquamarine;
+}
+.menu>li:hover a{
+	color: hotpink;
+}
+
+.menu>li:hover>.sub li{
+	display: block;
+}
+/* 二级菜单 */
+.sub>li{
+	background-color: #D0104C;
+	width: 120px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border-right: 1px solid aliceblue;
+}
+
+.sub>li:hover{
+	background-color: #DB4D6D;
+}
+
+.sub>li:hover>.sub_chr{
+	display: block;
+}
+
+/* 三级菜单 */
+.sub_chr>li{
+	background-color: #E83015;
+	width: 120px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	border-right: 1px solid aliceblue;
+	
+}
+
+.sub_chr>li:hover{
+	background-color: #E83085;
+}

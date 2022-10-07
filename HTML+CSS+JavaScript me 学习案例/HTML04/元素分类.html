@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			a{
+				height: 500px;/* 此属性没用，行级元素内容有多宽就多宽 */
+				width: 500px;/* 此属性没用，行级元素内容有多宽就多宽 */
+				margin: 100px 10px;/* 上下100没用，左右10起作用 */
+				background-color: aliceblue;/* 将背景填充到内容上 */
+			}
+			p
+			{
+				width: 200px;
+				background-color: aqua;/* 块级元素，没设置宽度内容默认撑满一行，设置宽度按设置的宽度撑满 */
+			}
+		</style>
+	</head>
+	<body>
+		<a href="#">首页</a><!-- 行级标签 -->
+		<a href="#">首页</a>
+		<a href="#">首页</a>
+		<a href="#">首页</a>
+		<span>dddd</span><!-- 特殊的行级标签，没有任何的样式 -->
+		
+		<p>的说法是</p><!-- 块级标签 -->
+		<div>asdjfi</div><!-- 特殊的块级标签，没有任何样式 -->
+		
+		<img src="img/2022-09-01_155649.png" alt=""><!-- 内联块元素 -->
+		<img src="img/2022-09-01_155649.png" alt=""><!-- 支持宽高，没设置宽高时内容(图片)决定宽度 -->
+	</body>
+</html>

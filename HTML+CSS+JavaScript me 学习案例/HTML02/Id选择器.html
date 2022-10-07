@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			.p01			
+			{
+				color: azure;
+			}
+			#id01{					/* id选择器优先级高于类选择器,类选择器和id选择器可同时作用于一个标签*/
+				color: crimson;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="#" class="p01">首页</a>  <!-- 使用该类 -->
+		<a href="#" id="id01" class="p01">首页</a>  <!-- 使用该类和id -->
+		<a href="#" class="p01">首页</a>  <!-- 使用该类 -->
+		<h1 class="p01" id="id01">标题</h1>
+	</body>
+</html>

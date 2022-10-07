@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			ul
+			{
+				list-style: none;
+			}
+			a{
+				text-decoration: none;
+				font: normal normal 10px 微软雅黑;
+			}
+			ul li ul
+			{
+				display: none;
+				position: absolute;
+				left: 160px;
+				top: 15px;
+			}
+			ul li
+			{
+				width: 150px;
+				background-color: aqua;
+				line-height: 35px;
+				margin-top: 2px;
+			}
+			ul li:hover ul /* ul鼠标晃到li上时对li下的ul起作用 */
+			{
+				display: block;
+			}
+			ul li ul li
+			{
+				background-color: crimson;
+			}
+			ul li:hover
+			{
+				background-color: black;
+			}
+			ul li:hover a
+			{
+				color: chartreuse;
+			}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li><a href="#">一级</a>
+				<ul>
+					<li><a href="#">二级</a></li>
+					<li><a href="#">二级</a></li>
+					<li><a href="#">二级</a></li>
+				</ul>
+			</li>
+			<li><a href="#">一级</a>
+				<ul>
+					<li><a href="#">二级</a></li>
+					<li><a href="#">二级</a></li>
+					<li><a href="#">二级</a></li>
+				</ul>
+			</li>
+			<li><a href="#">一级</a>
+				<ul>
+					<li><a href="#">二级</a></li>
+					<li><a href="#">二级</a></li>
+					<li><a href="#">二级</a></li>
+				</ul>
+			</li>
+		</ul>
+	</body>
+</html>

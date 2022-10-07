@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<!-- 后代选择器 -->
+		<style>
+			p em{				/* 必须是存在继承关系的 ，如p中不存在h1子孙*/
+				color:red;
+			}
+			p strong em{
+				color: antiquewhite;
+			}
+		</style>
+	
+	</head>
+	<body>
+		<p>
+			<strong>
+				其他
+				<em>孙子</em>
+			</strong>
+			其他
+			<em>儿子</em>
+		</p>
+		<em>其他</em>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			.items .item {
+				width: 230px;			/* 设置列表宽度 */
+				height: 320px;			/* 设置列表高度 */
+				background: #ccc;		/* 设置列表背景颜色 */
+				list-style: none;		/* 删除列表小圆点 */
+				text-align:center;		/* 列表文字水平居中 */
+			}
+			.item-banner {
+				background: #666;	/* 设置列表前三行背景颜色 */
+				color: #FFF;		/* 设置列表前三行文字颜色 */
+			}
+			.item-header {
+				font-size: 12px;
+				line-height: 52px;
+			}
+			.item-name {
+				font-size: 22px;	/* 设置书名格式 */
+				line-height: 74px;	/* line-height行高 */
+			}
+			.item-author {
+				font-size: 14px;	/* 设置作者格式 */
+				text-indent: 7em;	/* 设置缩进 */
+				padding-bottom: 70px;	/* 底部边距 */
+			}
+			.item-description {
+				background: #eee;
+				height: 104px;
+				line-height: 76px;
+				text-indent: 3em;
+				font-size: 12px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul class='items'>
+			<li class='item'>
+				<div class='item-banner'>
+					<div class='item-header'>生活中总是充满了乐</div>
+					<div class='item-name'>聊聊我的大学室友</div> 
+					<div class='item-author'>@张三 著</div>
+				</div>
+				<div class='item-description'>那些回忆，那些事。。。</div>
+			</li>
+		</ul>
+	</body>
+</html>

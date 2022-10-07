@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<form action="index.html" name="form1" method="GET">
+			<label for="uname" >用户名:</label><input type="text" name="uname" id="uname"/><br />
+			密码:<input type="password" name="uname"/><br />
+			文件域:<input type="file" name="uname"/><br />
+			隐藏:<input type="hidden" name="uname"/><br />
+			复选框:<input type="checkbox" name="uname" checked="checked"/><!-- name一致表示一组便于收集 -->
+				  <input type="checkbox" name="uname"/><br />
+				  <label for="sexid">性别</label><!-- lable绑定input标签 -->
+				  <input type="radio" name="sex" id="sexid">
+				  <input type="radio" name="sex" id="sexid"><br />
+			<input type="submit" name="提交"><!-- 将表单发送 到服务器,并打开action页面 -->
+		</form>
+	</body>
+</html>

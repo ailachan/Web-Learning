@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			p		/* 标签选择器优先级最低 */
+			{
+				color: aqua;
+			}
+			#c01{		/* id选择器优先级高于类选择器 */
+				color: red;
+			}
+			.p01
+			{
+				color:darkcyan;
+			}
+			.p02
+			{
+				font-size: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<p id="c01" class="p01 p02" >disjaf</p>
+	</body>
+</html>

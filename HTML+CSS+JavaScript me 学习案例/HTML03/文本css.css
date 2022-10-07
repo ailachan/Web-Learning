@@ -1,0 +1,38 @@
+.p01
+{
+	font-size: 32px;
+	/* color: rgb(21, 33, 213); */
+	/* color: aqua; */
+	/* color: #322432; */
+	color: rgba(231, 23, 32, 0.5);/* 透明度alpha: 0-1 */
+}
+.p02
+{
+	font-size: 32px;
+	text-align:right;
+}
+.p03
+{
+	text-indent: 30px;
+}
+.p04
+{
+	line-height: 80px;
+}
+.p05
+{
+	font-size: 35px;
+	text-decoration: overline;
+}
+.p06
+{
+	/* vertical-align: middle;只能在table标签中使用 */
+	   line-height: 5px;/* 最好用这个实现垂直居中 */
+	border: 1px solid;
+	line-height: 5px;
+	/* 行高由上边距和下边距组成,
+	上边距与下边距相同时文字垂直居中,
+	文字高度是文字本身的高度,
+	文字高度-行高=0px,
+	上边距为0px下边距为0px即居中 */
+}

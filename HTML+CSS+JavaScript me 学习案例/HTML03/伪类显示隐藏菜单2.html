@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			ul{
+				list-style: none;
+				padding: 0px;
+			}
+			a{
+				text-decoration: none;
+				font: normal normal 18px '微软雅黑';
+				color: #fff;
+			}
+			ul li ul{
+				display: none;
+				position: absolute;
+				left: 160px;
+				top:15px;
+			}
+			
+			ul li{
+				width: 150px;
+				background-color: aqua;
+				line-height: 35px;
+				margin-top: 2px;
+			}
+			
+			ul li ul li{
+				background-color: crimson;
+			}
+			ul li:hover{
+				background-color: cornflowerblue;
+			}
+			ul li:hover a{
+				color: black;
+			}
+			ul li:hover ul{
+				display: block;
+			} 
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li><a href="#">一级菜单</a>
+			<ul>
+				<li><a href="#">二级菜单</a></li>
+				<li><a href="#">二级菜单</a></li>
+				<li><a href="#">二级菜单</a></li>
+				<li><a href="#">二级菜单</a></li>
+				<li><a href="#">二级菜单</a></li>
+			</ul>
+			</li>
+			<li><a href="#">一级菜单</a>
+			<ul>
+				<li><a href="#">二级菜单</a></li>
+				<li><a href="#">二级菜单</a></li>
+				<li><a href="#">二级菜单</a></li>
+				<li><a href="#">二级菜单</a></li>
+				<li><a href="#">二级菜单</a></li>
+			</ul>
+			</li>
+			<li><a href="#">一级菜单</a>
+			<ul>
+				<li><a href="#">二级菜单</a></li>
+				<li><a href="#">二级菜单</a></li>
+				<li><a href="#">二级菜单</a></li>
+				<li><a href="#">二级菜单</a></li>
+				<li><a href="#">二级菜单</a></li>
+			</ul>
+			</li>
+			<li><a href="#">一级菜单</a></li>
+			<li><a href="#">一级菜单</a></li>
+		</ul>
+	</body>
+</html>
