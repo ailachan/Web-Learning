@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#div01
+			{
+				width: 300px;
+				height: 100px;
+				border: 1px solid red;
+				display: flex;
+				flex-flow: column wrap;
+				justify-content: space-around;
+				
+			}
+			#div02
+			{
+				width: 250px;
+				border: 1px solid blue;
+				align-self: center;
+			}
+		</style>
+		<script>
+			function move()
+			{
+				var _div01 = document.getElementById("div01");
+				var _div02 = document.getElementById("div02");
+				var _h1 = _div01.firstElementChild;
+				_div01.parentElement.insertBefore(_h1,_div01);
+				_div01.appendChild(_div02);
+			}
+		</script>
+	</head>
+	<body>
+		<div id="div01"><h1>红盒子</h1></div>
+		<div id="div02">蓝盒子</div>
+		<button onclick="move()">移动</button>
+	</body>
+</html>

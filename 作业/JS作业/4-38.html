@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#div01
+			{
+				width: 300px;
+				border: 1px solid red;
+				align-self: center;
+				margin-bottom: 10px;
+			}
+			#div02
+			{
+				border: 1px solid blue;
+				display: flex;
+				flex-flow: column wrap;
+				justify-content: space-around;
+			}
+		</style>
+		<script>
+			function move()
+			{
+				var _div01 = document.getElementById("div01");//id选择器选div01
+				var _div02 = document.getElementById("div02");
+				_div02.appendChild(_div01);
+			}
+		</script>
+	</head>
+	<body>
+		<div id="div01"><h1>红盒子</h1></div>
+		<div id="div02">蓝盒子</div>
+		<button onclick="move()">移动</button>
+	</body>
+</html>

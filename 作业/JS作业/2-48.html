@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			var date = new Date(2025,10,11);
+			document.write(date.getDay());
+			
+			var datems = date.getTime();
+			document.write("<br/>")
+			document.write(datems);
+			
+			var datenow = new Date();
+			document.write("<br/>");
+			document.write(datenow);
+			document.write("<br/>")
+			var datemsnow = datenow.getTime();
+			document.write(datemsnow);
+			
+			document.write("<br/>")
+			datesubms = datems-datemsnow;
+			datesub = datesubms/1000/60/60/24;
+			document.write(datesub);
+			
+			
+			var str;
+			str = prompt("请输入一个字符串");
+			console.log(str);
+			var strsub = str.replace(/^[ ]*|[ ]*$/g,"");
+ // 不带g，在正则过程中，字符串是从左至右匹配的，如果匹配成功就不再继续向右匹配了；
+ // 带g，它会重头到尾的把正确匹配的字符串挑选出来
+ //此处用的是或者，匹配开头含空格多个或结尾含空格多个，开头空格多个处理完后会结束，所以得加全局
+			console.log(strsub);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

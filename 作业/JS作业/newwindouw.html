@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#div01
+			{
+				display: flex;
+				justify-content: space-around;
+				flex-flow: row wrap;
+				width: 400px;
+				/* flex: 1;均匀分配这400px */
+			}
+			#div01 button:nth-child(3),button:nth-child(4)
+			{
+				margin-top: 20px;
+			}
+		</style>
+		<script>
+			function justwin()
+			{
+				moveBy(500,500);
+			}
+			
+			function justwin2()
+			 {
+				 moveTo(200,200);
+			 }
+			 function justsize()
+			 {
+				 resizeBy(500,500);
+			 }
+			 function justsize2()
+			 {
+				 resizeTo(200,200);
+			 }
+		</script>
+	</head>
+	<body>
+		<div id="div01">
+			<button style="font-size: 20px;" onclick=justwin()>移动窗口,相对</button>
+			<button style="font-size: 20px;" onclick=justwin2()>移动窗口,绝对</button>
+			<button style="font-size: 20px;" onclick=justsize()>调整大小,相对</button>
+			<button style="font-size: 20px;" onclick=justsize2()>调整大小,绝对</button>
+		</div>
+	</body>
+</html>

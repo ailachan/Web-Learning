@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+
+	</head>
+	<body>
+		<!-- <p id="input01"></p> -->
+		<textarea name="input01" id="input01" cols="30" rows="1"></textarea>
+		<!-- <input id="input01"/> -->
+		<script>
+			var txt01 = document.getElementById("input01");
+			var sum=0;
+			var timeid;
+
+			function typetxt01()
+			{
+				
+				sum++;
+				txt01.innerText = sum;
+				
+				
+				if(sum==10)
+				{
+					clearInterval(timeid);
+					confirm("10秒已到")
+					txt01.innerText = null;
+				}
+			}
+			timeid = setInterval("typetxt01()",1000);
+		</script>
+	</body>
+</html>

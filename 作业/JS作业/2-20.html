@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function fun()
+			{
+				var arr = new Array(5);//指定数组长度并每一个为空或者可以用Arrays(0,0,0,0,0)
+				for (var i = 0; i < arr.length; i++) {
+					arr[i]=i;
+				}
+				for (let s of arr) {
+					document.write(s);
+				}
+				document.write("</br>")
+				var arr01 = arr.reverse();
+				document.write(arr01);
+			}
+			
+			function fun02()
+			{
+				var arr01 = ["1",323,"jdsfj"];
+				var arr02 = Array(2324,"dfd",213);
+				var arr03 = [23920,"djfjsdfj",'3290dfsdf'];
+				var arrsum = arr01.concat(arr02,arr03);
+				document.write(arrsum);
+				var arrnew = arrsum.slice(0,1);
+				document.write("</br>"+arrnew);
+			}
+			fun();
+			document.write("</br>");
+			fun02();
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

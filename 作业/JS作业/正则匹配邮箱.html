@@ -1,0 +1,22 @@
+<!DOCTYPE html><!-- html文档流从上到下读取，onCLick调用script中的方法时，是在body中对象点击时加载 -->
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			var str = prompt("请输入正确的邮箱地址：");
+			if(str == str.match(/^[ ]*$/g))//不加或者,即开头和结尾都有空格即全是空格,匹配全是空格直接结束，可不加/g
+			{
+				confirm("为空");
+			}
+			
+			if(str!=str.match(/^.*@[0-9,a-z]*\.[a-z]*$/)) //包含@前半部分任意字符或数字后半部分0-9，a-z字母
+			{
+				confirm("不包含@和.");
+			}
+
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
