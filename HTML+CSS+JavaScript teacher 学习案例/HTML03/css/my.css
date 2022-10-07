@@ -1,0 +1,32 @@
+.p01{
+	font-size: 32px;
+	/* color: palevioletred;
+	color: #dedede;
+	color: rgb(200, 4, 12); */
+	color: rgba(200, 4, 12, 0.3);
+}
+
+.p02{
+	font-size: 28px;
+	text-align: right;
+}
+
+.p03{
+	text-indent: 30px;
+}
+
+.p04{
+	line-height: 10px;
+}
+
+.p05{
+	font-size: 24px;
+	text-decoration: line-through;
+}
+
+.p06{
+	border: 1px salmon solid;
+	height: 60px;
+	vertical-align: middle;
+	line-height: 60px;
+}

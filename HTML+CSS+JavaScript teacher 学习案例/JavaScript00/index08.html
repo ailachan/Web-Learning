@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			function sum( arg1, arg2 )			// 加法函数			{				var realArgCount = arguments.length;    	// 调用函数时传递的实参个数				var frmArgCount = sum.length;          	// 函数定义时的形参个数				if( realArgCount < frmArgCount )        	// 实际参数个数少于形参个数				{					var e = new Error();                		// 定义错误信息，然后抛出					e.number = 100001;			// 错误编号					e.message = "实际参数个数不符合要求！";	// 错误消息					throw e;				// 抛出异常				}		    }
+					try			{				document.write( "<p><h1>arguments对象测试</h1></p>" );  	// 输出标题				document.write( "正确调用的结果：" + sum(10,20) );      	// 输出正确调用的结果				document.write( "<br>不符合规则的调用结果：" ); // 人为引发一个不符合规则的调用方式				document.write( sum(10) );	}			catch(e)                                                    	// 捕捉错误			{				alert(e.number+"错误号："+e.message);                   	// 输出错误信息			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<form action="index.html" name="form1" method="GET">
+			<label for="uname">用户名：</label><input id="uname" type="text" name="uname" value="123123" readonly/><br/>
+			密码：<input type="password" name="uname"/><br/>
+            文件域：<input type="file" name="uname"/><br/>
+			<input type="hidden" name="uname"/><br/>
+			复选框：<input type="checkbox" name="hobby" checked="checked"/>吃饭
+			<input type="checkbox" name="hobby"/>睡觉
+			<input type="checkbox" name="hobby"/>打豆豆
+			<input type="checkbox" name="hobby"/>游戏<br/>
+			单选：
+			<input type="radio" name="sex" checked="checked"/>男
+			<input type="radio" name="sex"/>女<br/>
+			<input type="button" value="按钮1"/>
+			<input type="button" value="按钮2"/>
+			<input type="button" value="按钮3"/><br/>
+			
+			<label for="li">学历</label>
+			<select id="li">
+				<option>幼儿园</option>
+				<option selected>小学</option>
+				<option>中学</option>
+				<option>高中</option>
+				<option>本科</option>
+			</select><br/>
+			评论：
+			<textarea cols="50" rows="10"></textarea><br/>
+			
+			<input type="button" value="普通按钮"/>
+			<input type="reset" value="重置"/>
+			<input type="submit" value="提交"/>
+			
+			<input type="button" value="同意" disabled/>
+		</form>
+	</body>
+</html>

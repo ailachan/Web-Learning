@@ -1,0 +1,21 @@
+#ul01{
+				list-style: none;
+				border: 1px solid #D6D6D6;
+				width: 300px;
+				padding: 0px;
+			}
+			li{
+				height: 60px;
+				border-bottom:2px dotted #D6D6D6;
+				line-height: 60px;
+			}
+			span{
+				padding: 15px;
+				font-size: 18px;
+				font-weight: 900;
+				font-family: 'Courier New', Courier, monospace;
+				
+			}
+			.span_color{
+				color: orangered;
+			}
