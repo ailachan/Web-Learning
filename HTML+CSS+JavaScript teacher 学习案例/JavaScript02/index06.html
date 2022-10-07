@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			function goto_url(url){
+				window.location.assign(url);
+			}
+			function clear_document(){
+				window.location.href='about:blank';
+			}
+			function replace_url(url){
+				window.location.replace(url)
+			}
+		</script>
+	</head>
+	<body>
+		<button onclick="goto_url('http://www.baidu.com')">跳转百度</button>
+		<button onclick="clear_document()">清空页面</button>
+		<button onclick="replace_url('index05.html')">替换页面</button>
+	</body>
+</html>

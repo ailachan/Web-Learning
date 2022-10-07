@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#div01{
+				border: 1px solid red;
+				padding: 10px;
+			}
+			#div02{
+				margin: 20px 0px;
+				border: 1px solid blue;
+			}
+		</style>
+		<script type="text/javascript">
+			function insert_blue(){
+				var _div01 = document.getElementById('div01');
+				var _div02 = document.getElementById('div02');
+				var _h1=_div01.firstElementChild;
+				 
+				_div01.parentElement.insertBefore(_h1,_div01);
+				_div01.appendChild(_div02);
+			}
+		</script>
+	</head>
+	<body>
+		<div id="div01"><h1>红盒子</h1></div>
+		<div id="div02">蓝盒子</div>
+		<button onclick="insert_blue()">移动</button>
+	</body>
+</html>

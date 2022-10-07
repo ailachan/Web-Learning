@@ -1,0 +1,36 @@
+#container{
+	background-color: orange;
+	width: 98%;
+	margin: 0 auto;
+	overflow: hidden;
+}
+header{
+	height: 80px;
+	background-color: yellow;
+}
+nav{
+	height: 40px;
+	background-color: cornflowerblue;
+}
+aside{
+	width: 30%;
+	height: 200px;
+	background-color: yellow;
+	float: left;
+	margin-top: 10px;
+}
+section{
+	width: 69%;
+	height: 200px;
+	background-color: yellow;
+	float: left;
+	margin-left: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+footer{
+	margin-top: 10px;
+	background-color: aqua;
+	clear: both;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#div_flex{
+				border: 1px salmon solid;
+				display: flex;
+				justify-content: center;
+			}
+			#div_flex>div{
+				background-color: aqua;
+				margin-left: 5px;
+				flex: 1;
+				height: 100px;
+			}
+			.basis01{
+			   flex-basis: 20%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div_flex">
+			<div class="basis01">1</div>
+			<div>2</div>
+			<div>3</div>
+			<div>4</div>
+			<div>5</div>
+			<div>6</div>
+		</div>
+	</body>
+</html>

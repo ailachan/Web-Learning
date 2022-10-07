@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			#div01 a{
+				color: aqua;
+			} 
+			#div01>a{
+				color: red;
+			}
+			#div01>a+div{
+				border: 1px salmon solid;
+			}
+		    #div01>a~div{
+				border: 1px red solid;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div01">
+			 <div>1</div> 
+		     <a href="#">首页</a>
+			<div>2
+			   <a href="#">首页</a>
+			   <div>3
+			      <a href="#">首页</a>
+			   </div>
+			   <a href="#">首页</a>
+			</div>
+			<div>111111</div> 
+			<div>22222</div> 
+			<div>3333333</div> 
+			<div>4444444</div> 
+		</div>
+	</body>
+</html>

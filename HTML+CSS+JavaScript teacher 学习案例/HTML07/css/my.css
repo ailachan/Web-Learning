@@ -1,0 +1,52 @@
+ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	overflow: hidden;
+}
+
+#row{
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 7px;
+}
+.i{
+	font-size: 18px;
+	color: orange;
+}
+.txt01{
+	padding-left: 10px;
+	font-size: 18px;
+	font-weight: 600;
+}
+.t1{
+	float: right;
+	margin-right: 30px;
+	font-weight: 600;
+	font-size: 18px;
+}
+.txt{
+	margin-left: 15px;
+	font-size: 18px;
+}
+.txt02{
+	color:#ccc;
+	padding-top: 8px;
+	font-size: 16px;
+}
+.txt03{
+	color: red;
+	font-weight: bold;
+}
+.txt04{
+	padding-left: 25px;
+	font-size: 16px;
+	font-weight: bold;
+	color: #ccc;
+	text-decoration: line-through;
+}
+
+ul li{
+	margin-top: 20px;
+	width: 183px;
+	float: left;
+}
